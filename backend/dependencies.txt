@@ -1,0 +1,6 @@
+express
+sequelize
+body-parser
+cors
+mysql2
+md5

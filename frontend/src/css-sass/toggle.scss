@@ -1,0 +1,48 @@
+$width: 60px;
+$height: 30px;
+
+
+#toggle-button {
+    position: relative;
+    display: block;
+    margin: 10px 0;
+    width: $width;
+    height: $height;
+    // background: $dark-bg-color;
+    border-radius: $height;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: inset 0 2px 15px rgba($color: #000000, $alpha: 0.1),
+                inset 0 2px 2px rgba($color: #000000, $alpha: 0.1),
+                inset 0 -1px 1px rgba($color: #000000, $alpha: 0.1);
+}
+
+#toggle-button.checked {
+    // background: $light-bg-color;
+    box-shadow: inset 0 1px 15px rgba($color: #000000, $alpha: 0.1),
+                inset 0 1px 2px rgba($color: #000000, $alpha: 0.1),
+                inset 0 -1px 1px rgba($color: #000000, $alpha: 0.05);
+}
+
+#toggle-button .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $height;
+    height: $height;
+    // background: linear-gradient(to bottom, $dark-button-color, $dark-bg-color);
+    border-radius: $height;
+    transform: scale(0.8);
+    transition: 0.5s;
+    box-shadow: 0 2px 15px rgba($color: #000, $alpha: 0.5),
+                inset 0 1px 1px rgba($color: #fff, $alpha: 0.2),
+                inset 0 -1px 1px rgba($color: #fff, $alpha: 0.2);
+}
+
+#toggle-button.checked .indicator {
+    left: $height;
+    // background: linear-gradient(to bottom, $light-button-color, $light-bg-color);
+    box-shadow: 0 2px 5px rgba($color: #000, $alpha: 0.2),
+                inset 0 1px 1px rgba($color: #fff, $alpha: 1),
+                inset 0 -1px 1px rgba($color: #fff, $alpha: 1);
+}

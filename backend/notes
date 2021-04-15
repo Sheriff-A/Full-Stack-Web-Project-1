@@ -1,0 +1,9 @@
+Database Models
+
+Drink Model/ Table
+ID (Primary Key)
+Name
+Description
+Price
+(Image Name)
+Available/ In-Stock

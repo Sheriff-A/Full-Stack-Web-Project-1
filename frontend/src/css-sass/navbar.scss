@@ -1,0 +1,63 @@
+$navbar-bg-color: #f2f2f2;
+$logo-color: #404040;
+$logo-bg-color: #8c8c8c;
+$nav-link-color: #262626;
+$nav-link-bg-color: #404040;
+
+header {
+    position: relative;
+    max-width: 90vw;
+    margin: 20px auto;
+    padding: 10px;
+    background: $navbar-bg-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba($color: #000000, $alpha: .2);
+}
+
+.logo {
+    color: $logo-color;
+    height: 60px;
+    font-size: 2em;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+}
+.clearfix {
+    clear: both;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li .nav-link {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: $nav-link-color;
+    border-radius: 4px;
+
+}
+
+nav ul li .nav-link:hover{
+    background: $nav-link-bg-color;
+    color: #f2f2f2;
+    transition: .1s linear;
+}

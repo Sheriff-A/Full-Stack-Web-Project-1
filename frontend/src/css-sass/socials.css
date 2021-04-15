@@ -1,0 +1,41 @@
+.social-container {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2.2em;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+    border-radius: 2em 0 0 2em;
+}
+
+.social-item {
+    padding: 10px;
+    color: #595959;
+    transition: 0.1s ease-in-out;
+}
+
+.social-item:hover {
+    font-size: 1.4em;
+}
+
+.social-item.instagram:hover {
+    color: #e56969
+}
+
+.social-item.github:hover {
+    color: #f5f5f5
+}
+
+.social-item.facebook:hover {
+    color: #4267B2
+}
+
+.social-item.youtube:hover {
+    color: #c4302b 
+}
+
+.social-item.twitter:hover {
+    color: #1DA1F2
+}
