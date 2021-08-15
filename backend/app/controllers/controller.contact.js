@@ -1,4 +1,4 @@
-exports.send = (rreq, es) => {
+exports.send = (req, res) => {
     // Validate Request
     // Make sure there is a name
     if(!req.body.name){
